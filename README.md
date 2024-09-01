@@ -12,14 +12,17 @@ The project structure is as explained below:
     d. announcements page
     e. FAQs page
 
-3. After the startup user logs in. we will have startup dashboard, where we will have the following page.
-    a.Details page
-    b.finances page
-    c.status page
-    d. govt. schemes page
+3. After the startup user logs in. we will have startup dashboard, where we will have the following page \n
+    a.Details page\n
+    b.finances page\n
+    c.status page\n
+    d. govt. schemes page\n
     e. personalised help portal (not mandatory, can link to a mailing client and do it via emails)
 
 4. for the administrator dashboard, we will have the following pages 
     a. Administrator details page
     b. startup details page
     c. database access page to modify the database and update the status for the startups.
+
+
+5. for the administ
