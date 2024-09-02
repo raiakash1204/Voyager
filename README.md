@@ -33,3 +33,4 @@ The project structure is as explained below:
 1. All the css and javascript files are located in the static folder
 2. All the html files are located in the templates folder.
 3. Please keep the folder structure of the templates folder and the static/css, static/js, static/images folder same for the ease of linking the directories.
+qwertyuiohgc bhgvbn Anagh anagh aashish akash
