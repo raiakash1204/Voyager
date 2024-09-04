@@ -1,0 +1,51 @@
+<!-- This File is create by Mr. Shri Shri Aashish -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Page</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/registration/styles.css' %}">
+    <script src="{% static 'js/login/scripts.js'%}"></script>
+    <title>User Registration</title>
+<body class="body"> 
+  <header class="top" id="arp">
+    <div id="arp">
+     <img src="https://auth.mygov.in/sites/all/themes/mygovauth/logo.png">
+     <img src="" alt="">
+    </div> 
+  </header>
+  <main>
+    <div id="cyaa">Create Your AYUSH Account</div>
+    <span id="ahaa">Already have an Account?</span>
+    <button id="login">Log in</button>
+    <div id="rwae">Register with an Email or Mobile Number</div>
+    <input type="text" placeholder="Full Name" class="border">
+    <br>
+    <input type="email" placeholder="Email" class="border">
+    <br>
+    <input type="number" placeholder="Mobile Number" class="border">
+    <br>
+    <input type="date" placeholder="DOB" class="border">
+    <br>
+    <select name="gender" class="border" id="gender">
+      <option value="" selected="selected">--Select Gender--</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Others">Others</option>
+    </select>
+    <br>
+    <input type="number" placeholder="Aadhaar Number" class="border">
+    <br>
+    <input type="file" name="" class="border" id="file">
+    <br>
+    <input type="text" placeholder="PAN Number" class="border">
+    <br>
+    <input type="file" class="border" id="file">
+    <br>
+    <button class="border" id="cna">Create New Account</button>
+  </main>
+  <footer>
+    <div id="footer">© Content owned by Ministry of AYUSH, Government of India</div>
+  </footer>
+</body>
+</html>

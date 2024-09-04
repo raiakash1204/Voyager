@@ -4,6 +4,7 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, "navigation/index.html")
+
 def home(request):
     return render(request, "homepage/index.html")
 
@@ -12,3 +13,6 @@ def login(request):
 
 def admin_login(request):
     return render(request, "admin_login/index.html")
+
+def registration(request):
+    return render(request, "registration/index.html")
