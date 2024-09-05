@@ -29,8 +29,15 @@ The project structure is as explained below:
 
 
 
+
 <h1>NOTE FOR THE DEVELOPER</h1>
 1. All the css and javascript files are located in the static folder
 2. All the html files are located in the templates folder.
 3. Please keep the folder structure of the templates folder and the static/css, static/js, static/images folder same for the ease of linking the directories.
-qwertyuiohgc bhgvbn Anagh anagh aashish akash
+
+
+#tasks
+1. create a user database
+2. create an announcements adding form for the administrator so that it would be easy for him to add new announcements to the page.
+3. The admin has the access to the database containing the data for all the users. he will be able to view forms submitted by the user and he will also have to manually verify the data for the users.
+4. we will have 4 administrators, (district officer, nodal officer, zonal officer and secretary)

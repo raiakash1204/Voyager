@@ -16,3 +16,6 @@ def admin_login(request):
 
 def registration(request):
     return render(request, "registration/index.html")
+
+def announcements(request):
+    return render(request, "announcements/index.html") 
