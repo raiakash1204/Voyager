@@ -1,0 +1,76 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+}
+body {
+    background-color: #f1f1f1;
+    padding:0.1vw;
+}
+/* styles for the universal header for all the pages */
+.header {
+    background-color: #294887; 
+    height:auto;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.header_logo {
+    width: 150px;
+    height: auto;
+    box-sizing:border-box;
+    margin:0.5em;
+    border-radius:1em;
+    box-shadow:0 0 2px 2px white;
+}
+
+.header_title{
+    font-size:2em;
+}
+
+.header h1{
+    color:white;
+}
+
+
+/* styles for the card */
+.card{
+    margin:2em auto;
+    width:95vw;
+    height:auto;
+    display:flex;
+    background-color:#d6e9fa;
+    box-sizing:border-box;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: center;
+    padding:1em;
+    border:1px solid grey;
+    border-radius:1em;
+    box-shadow:0 0 3px 2px grey;
+    transition:box-shadow 0.5s ease, translate 0.5s ease;
+}
+
+.card:hover{
+    translate:0 -2px;
+    box-shadow:0 0 10px 2px grey;
+}
+.card_date{
+    font-size:1em;   
+    font-style:italic;
+}
+
+.card span{
+    font-size:0.9em;
+    font-style:italic;
+}
