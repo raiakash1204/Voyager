@@ -1,0 +1,37 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* styles for the header of all the pages. */
+.header {
+    background-color: #294887; 
+    height:auto;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.header_logo {
+    width: 150px;
+    height: auto;
+    box-sizing:border-box;
+    margin:0.5em;
+    border-radius:1em;
+    box-shadow:0 0 2px 2px white;
+}
+
+.header_title{
+    font-size:2em;
+}
+
+.header h1{
+    color:white;
+}
+
+
