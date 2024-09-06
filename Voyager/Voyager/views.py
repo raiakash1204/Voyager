@@ -19,3 +19,6 @@ def registration(request):
 
 def announcements(request):
     return render(request, "announcements/index.html") 
+
+def faq(request):
+    return render(request, "faq/index.html") 
