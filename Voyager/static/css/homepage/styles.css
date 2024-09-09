@@ -1,1 +1,217 @@
-*{background-color:red;}
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    a, a:visited, a:hover, a:active {
+        text-decoration: none;
+    }
+    a {
+        color: inherit; /* Inherit the color from the parent */
+        text-decoration: none; /* Ensure no underline */
+    }
+    body {
+        width: 100vw;
+        height: auto;
+        padding-top: 20vh;
+    }
+    .header {
+        width: 100vw;
+        height: 20vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        z-index: 1000;
+        box-shadow: 0 0 5px 5px grey;
+        border-radius: 0 0 1em 1em;
+    }
+    .topbar {
+        width: inherit;
+        height: auto;
+        background: linear-gradient(90deg, #1977cc, #056b6b);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.1em 1em;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .top-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+    @media (max-width: 725px) {
+        .top-title span {
+            display: none; /* Hides the text "Government of India" */
+        }
+    }
+
+    .top-title img {
+        height: 4vh;
+        width: auto;
+        display: inline;
+        box-shadow: 0 0 1px 1px white;
+    }
+
+    .top-access {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        gap: 0.5em;
+    }
+
+    .top-access > * {
+        position: relative;
+        padding: 0 0.5em;    
+    }
+
+    .navigation {
+        padding: 0 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .nav-links span {
+        height: auto;
+        width: auto;
+        /*border: 1px solid black;*/
+        padding: 0.5em;
+        display: block;
+        text-align:center;
+        border-radius:0.5em;
+        transition:background-color 0.3s ease, box-shadow 0.2s ease;
+        font-size:1.2em;
+    }
+    .nav-links span:hover{
+        background-color:#1977cc99;
+        box-shadow:0 0 2px 2px #cecece;
+        color:white;
+    }
+
+    @media (max-width: 1060px) {
+
+    }
+
+    .burger-nav-container {
+        height: 0; /* Start with height 0 */
+        overflow: hidden; /* Hide overflowing content */
+        transition: height 0.3s ease; /* Smooth transition */
+        position:relative;
+        z-index:10000;
+    }
+    .burger-nav {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .burger-link {
+        font-size: 1.2em;
+        width: 100%;
+        height: auto;
+        padding: 1em;
+        border: 1px solid white;
+        color: white;
+        text-align: center;
+        background-color: #1977cc;
+        border-radius:1em;
+        box-sizing: border-box;
+        transition:background-color 0.3s ease;
+    }
+    .burger-link:hover{
+        background-color:#1977aa;
+    }
+
+    @media (max-width: 1060px) {
+        .nav-links {
+            display: none; /*Hides the default menu.*/
+        }
+        .burger-nav-container {
+            height: 0; /* Collapsed height */
+            overflow:scroll
+        }
+
+        .burger-nav-container.active {
+            height: auto; /* Set to the desired height when expanded */
+            overflow:scroll
+        }
+
+        .nav-links {
+            display: none; /* Hide standard nav links */
+        }
+
+        button.burger-nav-button{
+            display: block; /* Show burger button */
+        }
+    }
+    @media (min-width:1061px){
+        button.burger-nav-button{
+            display:none;
+        }
+    }
+
+/*Ayush grid cards*/
+.ayush-grid{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.cards-grid{
+    display:flex;
+    justify-content:space-around;
+    row-gap:10vw;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.cards{
+    height:30vh;
+    width:20vw;
+    padding:1em;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    box-sizing:border-box;
+    display:block;
+    border:1px solid black;
+    border-radius:1em;
+    box-shadow:0 0 10px 2px black;
+    transition:background-color 0.3s ease, color 0.3s ease, translate 0.5s ease;
+}
+.cards:hover{
+    background-color:#1977cc99;
+    color:white;
+    translate:0 -5px;
+}
+.cards h2{
+    font-size:18px;
+}

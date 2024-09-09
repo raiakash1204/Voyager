@@ -1,17 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {%load static%}
-    <link rel="stylesheet" href="{% static 'css/homepage/styles.css'%}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>AYUSH Swarojgar Portal</title>
-    
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/homepage/styles.css' %}">  
+    <script src="{% static 'js/homepage/scripts.js'%}"></script>
+    <script src="https://kit.fontawesome.com/e86e32551b.js" crossorigin="anonymous"></script>
+    <title>AYUSH Swarojgar Portal</title>  
 </head>
 <body>
-    <div class="topbar">
-        
-    </div>    
+    <div class="header">
+        <div class="topbar">
+            <span class="top-title">
+                <img src="https://www.india.gov.in/sites/upload_files/npi/files/spotlights/national_flag.jpg" alt="Flag of India">
+                <span>Government of India</span>
+            </span> 
+            <span class="top-access">
+                <span>
+                    <select class="language">
+                        <option name="en" value="0">English</option>
+                        <option name="hi" value="1">Hindi</option>
+                        <option name="as" value="2">Assamese</option>
+                        <option name="bn" value="3">Bengali</option>
+                        <option name="od" value="4">Odia</option>
+                        <option name="ta" value="5">Tamil</option>
+                        <option name="te" value="6">Telugu</option>
+                        <option name="ml" value="7">Malayalam</option>
+                        <option name="ml" value="8">Gujarati</option>
+                        <option name="kn" value="9">Kannada</option>
+                        <option name="pa" value="10">Punjabi</option>
+                        <option name="mr" value="11">Marathi</option>
+                    </select>
+                </span>
+                <span class="text">
+                    <button onclick="increaseTextSize()">A+</button>
+                    <button onclick="decreaseTextSize()">A-</button>
+                </span>
+            </span> 
+        </div>
+        <div class="navigation">
+            <span>
+                <img class="nav_logo" src="https://ayush.gov.in/images/logo/1.jpg">
+            </span> 
+            <span class="nav-links">
+                <span class="link">
+                    <a href="home">Home</a>
+                </span>
+                <span class="link">
+                    <a href="about">About</a>
+                </span>
+                <span class="link">
+                    <a href="services">Services</a>
+                </span>
+                <span class="link">
+                    <a href="schemes">Schemes</a>
+                </span>
+                <span class="link">
+                    <a href="media">Media Corner</a>
+                </span>
+                <span class="link">
+                    <a href="citizen">Citizen Corner</a>
+                </span>
+                <span class="link">
+                    <a href="contact">Contact Us</a>
+                </span>
+            </span>
+            <button class = "burger-nav-button"onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    <div class="burger-nav-container">
+        <div class="burger-nav">
+            <div class="burger-link">
+                <a href="#link1">Link 1</a>
+            </div>
+            <div class="burger-link">
+                <a href="#link2">Link 2</a>
+            </div>
+            <div class="burger-link">
+                <a href="#link3">Link 3</a>
+            </div>
+            <div class="burger-link">
+                <a href="#link4">Link 4</a>
+            </div>
+            <div class="burger-link">
+                <a href="#link5">Link 5</a>
+            </div>
+        </div>
+    </div>            
+    <section class="ayush-grid">
+        <h1 class="title">AYUSH GRID</h1>
+        <div class="cards-grid">
+            <div class="cards">
+                <h2>Ayurveda</h2>
+                <p></p>
+            </div>
+            <div class="cards">
+                <h2>Yoga & Naturopathy</h2>
+                <p></p>
+            </div>
+            <div class="cards">
+                <h2>Unani</h2>
+                <p></p>
+            </div>
+            <div class="cards">
+                <h2>Siddha</h2>
+                <p></p>
+            </div>
+            <div class="cards">
+                <h2>Sowa Rigpa</h2>
+                <p></p>
+            </div>
+            <div class="cards">
+                <h2>Homeopathy</h2>
+                <p></p>
+            </div> 
+        </div>    
+
+    </section>
 </body>
 </html>
