@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="{%static 'css/faq/styles.css'%}">
+    <link rel="stylesheet" href="{%static 'css/universal_styles.css'%}">
+    <script src="https://kit.fontawesome.com/e86e32551b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body{
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .faq li {
+          background: #f2f2f2;
+          border-bottom: 1px #ccc solid;
+        }
+        .faq li:first-child{
+          border-top: 1px #ccc solid;
+        }
+        .q{
+          padding: 1em 0;
+          border-left: 10px #f2f2f2 solid;
+          cursor: pointer;
+        }
+        .q:hover, .q:hover .arrow{
+          border-left-color: #0569ff ;
+        }
+        .arrow{
+          display: inline-block;
+          margin: 0 0.5em;
+          width: 0;
+          height: 0;
+          border-top: 6px solid transparent;
+          border-left: 10px solid #555;
+          border-bottom: 6px solid transparent;
+          transition: 0.3s;
+        }
+        .faq p{
+          color: #888;
+          line-height: 25px;
+        }
+        .a{
+          overflow: hidden;
+          height: 0;
+          padding: 0 1em 0 3.3em;
+          transition: 0.5s;
+        }
+        .a-opened {
+          padding: 1em 1em 2em 3.3em;
+          height: initial;
+          transition: 0.5s;
+        }
+        .arrow-rotated{
+          transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="header_logo" src="https://ayush.gov.in/images/logo/1.jpg">
+        <h1 class="header_title">Ministry of AYUSH</h1>
+        </div>
+       <ul class="faq">
+        <li>
+          <div class="q">
+            <span class="arrow"></span>
+            <span>What is AYUSH</span>
+          </div>
+          <div class="a">
+            <p>
+              MyGov is an innovative platform to build a partnership between Citizens and Government with the help of technology for growth and development of India. Through this platform, the Government aims to encourage Citizen Participation towards Good Governance by seeking their ideas, suggestions and grass roots level contribution. Citizens can participate in this unique initiative of nation building. For the very first time in the history of this country, citizens from across India will come together to share their expert thoughts, ideas and suggestions with the Government in areas related to various policies, programs, schemes etc. MyGov aims to empower citizens to work hand in hand with the Government.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="q">
+            <span class="arrow"></span>
+            <span>How can I join MyGov</span>
+          </div>
+          <div class="a">
+            <p>
+              Register on https://www.mygov.in to participate. You will be asked for personal details such as name, email id etc. You will also be required to mention the kind of skills you have & the issues on which you may like to provide inputs.
+
+Please note that MyGov do not share any personally identifiable information volunteered on this site with any third party (public/private). Any information provided to this website will be protected from loss, misuse, unauthorized access, disclosure, alteration, or destruction.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="q">
+            <span class="arrow"></span>
+            <span>For Government Employee</span>
+          </div>
+          <div class="a">
+            <p>
+              If you are a Government Employee having @gov.in or @nic.in email Id, you can use the credentials for the same to log in without having to provide any other details. .
+            </p>
+          </div>
+        </li>
+       </ul>
+         
+          
+        <script>
+         const q = document.querySelectorAll(`.q`);
+         const a = document.querySelectorAll(`.a`);
+         const arr = document.querySelectorAll(`.arrow`);
+         for(let i=0; i< q.length; i++){
+          q[i].addEventListener(`click`, () => {a[i].classList.toggle(`a-opened`);
+            arr[i].classList.toggle(`arrow-rotated`);
+          })
+         }
+        </script>
+          
+        
+</body>
+</html>
