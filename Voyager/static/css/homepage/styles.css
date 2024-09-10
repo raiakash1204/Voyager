@@ -15,9 +15,10 @@
         width: 100vw;
         height: auto;
         padding-top: 20vh;
+        background:#1977cc22;
     }
     .header {
-        width: 100vw;
+        width: 100%;
         height: 20vh;
         position: fixed;
         top: 0;
@@ -30,6 +31,7 @@
         z-index: 1000;
         box-shadow: 0 0 5px 5px grey;
         border-radius: 0 0 1em 1em;
+        background:white;
     }
     .topbar {
         width: inherit;
@@ -177,22 +179,70 @@
         }
     }
 
+/*Assets of Ministry of Ayush*/
+.assets{
+    width:99vw;
+    height:auto;
+    box-sizing:border-box;
+    padding:1em;
+    text-align:center;
+    background:transparent;
+}
+.asset-cards-grid{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:1em;
+}
+.asset-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:1em;
+    height:15vh;
+    border:1px solid grey;
+    width:10vw;
+    border-radius:1em;
+    background-color:white;
+    box-shadow:0 0 5px 2px #00000055;
+}
+.asset-card h3{
+    color:#1c79cc;
+}
+
 /*Ayush grid cards*/
 .ayush-grid{
     display:flex;
     flex-direction:column;
+    background-color:white;
     justify-content:center;
     align-items:center;
+    width:99vw;
+    height:auto;
+    padding:2em;
+    box-sizing:border-box;
+    margin:1em auto;
+    border:1px solid black;
 }
 .cards-grid{
     display:flex;
     justify-content:space-around;
-    row-gap:10vw;
+    gap:10vw;
+    flex-direction:row;
     align-items:center;
     flex-wrap:wrap;
 }
+.ayush-grid-logo{
+    max-width:20vw;
+    height:auto;
+    padding:0.5em;
+}
 .cards{
-    height:30vh;
+    height:auto;
     width:20vw;
     padding:1em;
     text-align:center;
@@ -200,6 +250,8 @@
     flex-direction:column;
     justify-content: center;
     align-items:center;
+    flex: 1 1 1 calc(33.33% - 20px);
+    max-width:90vw;
     box-sizing:border-box;
     display:block;
     border:1px solid black;
@@ -207,6 +259,23 @@
     box-shadow:0 0 10px 2px black;
     transition:background-color 0.3s ease, color 0.3s ease, translate 0.5s ease;
 }
+.cards p{
+    font-size:0.8em;
+}
+
+@media (max-width: 768px) {
+    .cards {
+      flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+  }
+  
+  /* Media query for small screens (e.g., phones) */
+  @media (max-width: 480px) {
+    .cards {
+      flex: 1 1 100%; /* 1 card per row */
+    }
+  }
+
 .cards:hover{
     background-color:#1977cc99;
     color:white;
